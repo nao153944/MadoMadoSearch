@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+    
+    
+<head>
+  <meta charset="UTF-8">
+  <title>まどまどサーチ β版</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"> 
+</head>
+
+
+    
+    
+<body>
+    
+    <div class="snslink">
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <i class="fa fa-circle fa-stack-2x circle-twitter"></i>
+           <a href="https://twitter.com/hienmadoka" target="_blank" onclick="gtag('event', 'twitter');"><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></a>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <i class="fa fa-circle fa-stack-2x circle-youtube"></i>
+           <a href="https://www.youtube.com/channel/UCBhhDcVyOAhmUERi1PsQ4Rw/featured" target="_blank" onclick="gtag('event', 'youtube');"><i class="fab fa-youtube fa-stack-1x"></i></a>
+        </span>
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <i class="fa fa-circle fa-stack-2x circle-trash"></i>
+           <i class="far fa-trash-alt fa-stack-1x fa-inverse" onclick="ConfirmAlert()"></i>
+        </span> 
+        
+        <span class="fa-stack fa-2x fa-lg">
+           <i class="fa fa-circle fa-stack-2x circle-up"></i>
+           <a href="#"><i class="fas fas fa-chevron-up fa-stack-1x fa-inverse"></i></a>
+        </span>
+        
+    </div>
+    
+    
+    <div class ="favorite">
+       <input type="checkbox" class="favorite-checkbox" id="favorite" onclick="FavoriteCheck()" >
+       <label class="c-text-favorite" for="favorite-checkbox">お気に入り</label>
+    </div>
+    
+    
+    
+    <div class ="content">    
+        
+        
+      
+        
+        <div id="c-1-1">
+           <input type='checkbox' class="checkbox" id="1-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https://www.youtube.com/watch?v=3tZAjM1SYAM&t=2897s')">
+              <c-text-title>ハム太郎とっとこうた</c-text-title><br>
+              <c-text-youtube>【記念歌枠】半年記念ライブ！！とっておきメドレー届けるよ！【鈴花ステラ/めがらいと】</c-text-youtube>
+           </button>
+        </div> 
+       
+
+          
+   
+    </div>
+    
+
+    
+   <script type="text/javascript">
+       
+var list = new Array(
+"1-1"
+
+
+);
+       
+       
+      var loadcontent;
+      var loadcheckbox;
+      var loadlist;
+       
+      window.onload = firstscript();
+      
+       
+       
+      function firstscript(){
+         var i=0;
+         while( i<list.length ){
+            loadlist = JSON.parse(localStorage.getItem('save'+list[i]));
+            if(loadlist == "true"){
+               loadcheckbox = document.getElementById(list[i]);
+               loadcheckbox.checked = true;
+            }
+            i++;
+         }
+      }
+       
+       
+       
+      function Save() {
+          var i = 0;
+          while( i<list.length ){
+             loadcheckbox = document.getElementById(list[i]);
+             if(loadcheckbox.checked == true){
+                  localStorage.setItem('save'+list[i],JSON.stringify("true"));
+             }
+             else{
+                  localStorage.setItem('save'+list[i],JSON.stringify("false"));
+             }
+             i++;
+          }
+      }
+      
+      
+      function ConfirmAlert(){
+          var message = "セーブ情報を削除しますか？";
+          if(confirm(message)){
+             Delete();
+          }
+      } 
+       
+      function Delete(){
+          var i = 0;
+          while( i<list.length ){
+             localStorage.removeItem('save'+list[i]);
+             loadcheckbox = document.getElementById(list[i]);
+             if(loadcheckbox.checked == true){
+                  loadcheckbox.checked = false;
+             }
+             i++;
+          }
+      } 
+       
+       
+      function FavoriteCheck() {
+         loadcheckbox = document.getElementById("favorite");
+          console.log(loadcheckbox);
+         if(loadcheckbox.checked == true){
+            FavoriteOn();
+         }
+         else{
+            FavoriteOff();
+         }
+      } 
+    
+       
+      function FavoriteOn() {
+          var i = 0;
+          while( i<list.length ){
+             loadlist = JSON.parse(localStorage.getItem('save'+list[i]));
+             if(loadlist == "true"){
+                loadcontent = document.getElementById("c-"+list[i]);
+                loadcontent.classList.remove("c-active-none");
+             }
+             else{
+                loadcontent = document.getElementById("c-"+list[i]);
+                loadcontent.classList.add("c-active-none");
+             }
+             i++;
+          }
+      }
+       
+      function FavoriteOff() {
+          var i = 0;
+          while( i<list.length ){
+                loadcontent = document.getElementById("c-"+list[i]);
+                loadcontent.classList.remove("c-active-none");
+             i++;
+          }
+      }
+        
+       
+       
+      function OpenWindow(url) {
+         window.open(url,"blank","width=800,height=720,left=900,top=100");
+      } 
+       
+       
+       
+       
+   </script>
+    
+
+
+    
+</body>
+    
+    
+    
+    
+    
+</html>
