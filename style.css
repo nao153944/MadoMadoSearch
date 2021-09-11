@@ -47,7 +47,7 @@ body{
    width: 480px;
    height: 60px;
    text-align: center;
-   background-color: greenyellow;
+   background-color: lawngreen;
 }
 
 
@@ -64,6 +64,21 @@ body{
    font-size: 25px;
    font-weight: bold;
    color: black;
+}
+
+
+.select{
+   width: 480px;
+   height: 60px;
+   text-align: center;
+   background-color: greenyellow;
+}
+
+.select1{
+   width: 80px;
+   height: 50px;
+   margin: 5px;
+   background-color: white;
 }
 
 
@@ -134,7 +149,9 @@ c-text-youtube-m{
     display: none;
 }
 
-
+.c-select-none{
+    display: none;
+}
 
 
 
