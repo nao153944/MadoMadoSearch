@@ -1,10 +1,12 @@
 @media screen and (min-width: 767px) {
 body{
+   zoom: 67%;
+}
+}
+body{
    width: auto;
    height: auto;
    background-color: wheat;
-   zoom: 67%;
-}
 }
 
 .snslink{
