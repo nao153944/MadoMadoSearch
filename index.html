@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>まどまどサーチ(仮) v4.2</title>
+  <title>まどまどサーチ(仮) v4.3</title>
   <link rel="shortcut icon" href="icon.png">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
@@ -38,9 +38,9 @@
            <i class="far fa-trash-alt fa-stack-1x fa-inverse" onclick="ConfirmAlert()"></i>
         </span> 
         
-        <span class="fa-stack fa-2x fa-lg">
+        <span class="fa-stack fa-2x fa-lg" onclick="scrolltop()">
            <i class="fa fa-circle fa-stack-2x circle-up"></i>
-           <a href="#"><i class="fas fas fa-chevron-up fa-stack-1x fa-inverse"></i></a>
+           <i class="fas fas fa-chevron-up fa-stack-1x fa-inverse"></i>
         </span>
         
     </div>
@@ -150,6 +150,7 @@
                   <option value="fripSide">fripSide</option>
                   <option value="Giga">Giga</option>
                   <option value="Goose house">Goose house</option>
+                  <option value="GReeeeN">GReeeeN</option>
                   <option value="halyosy">halyosy</option>
                   <option value="HoneyWorks">HoneyWorks</option>
                   <option value="HYDE">HYDE</option>
@@ -258,6 +259,7 @@
                   <option value="ツミキ">ツミキ</option>
                   <option value="てにをは">てにをは</option>
                   <option value="どうぶつビスケッツ×PPP">どうぶつビスケッツ×PPP</option>
+                  <option value="ナナホシ管弦楽団">ナナホシ管弦楽団</option>
                   <option value="ナナヲアカリ">ナナヲアカリ</option>
                   <option value="ナユタン星人">ナユタン星人</option>
                   <option value="ぬゆり">ぬゆり</option>
@@ -381,6 +383,8 @@
 
        <select id="select2" class="select2" onchange="SelectCheck()">
           <option value="none">全て</option>
+                  <option value="2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】">2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】</option>
+                  <option value="2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】">2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</option>
                   <option value="2021/12/13【歌枠】アニソンめっちゃうたう🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】">2021/12/13【歌枠】アニソンめっちゃうたう🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</option>
                   <option value="2021/12/11【歌枠】きょうもうたう！🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】">2021/12/11【歌枠】きょうもうたう！🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</option>
                   <option value="2021/12/10【歌枠】I'm baaaaaaack！アイムバァァァァアック！アニソン・ボカロ歌う！🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】">2021/12/10【歌枠】I&#39;m baaaaaaack！アイムバァァァァアック！アニソン・ボカロ歌う！🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</option>
@@ -1529,6 +1533,14 @@
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=mH-kO1m3yGA\x26t=5154s')">
               <c-text-title id="al-c-13-16" class="AKINO">創聖のアクエリオン</c-text-title><br>
               <c-text-youtube>2021/12/06【歌枠】アニソン歌うぞいっ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-13-17" class="so">
+           <input type="checkbox" class="checkbox" id="13-17" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=I6Njces23FE\x26t=5971s')">
+              <c-text-title id="al-c-13-17" class="AKINO">創聖のアクエリオン</c-text-title><br>
+              <c-text-youtube>2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】</c-text-youtube>
            </button>
         </div>
 
@@ -4388,6 +4400,14 @@
            </button>
         </div>
 
+              <div id="c-64-12" class="ra">
+           <input type="checkbox" class="checkbox" id="64-12" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=I6Njces23FE\x26t=6364s')">
+              <c-text-title id="al-c-64-12" class="シェリル・ノーム starring May'n,ランカ・リー＝中島愛">ライオン</c-text-title><br>
+              <c-text-youtube>2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】</c-text-youtube>
+           </button>
+        </div>
+
               <div id="c-65-1" class="ku">
            <input type="checkbox" class="checkbox" id="65-1" onclick="Save()" >
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=TXhgqxXVH4Q\x26t=248s')">
@@ -4649,6 +4669,14 @@
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=Sh2yHWj055A\x26t=6858s')">
               <c-text-title id="al-c-69-5" class="放課後ティータイム">天使にふれたよ！</c-text-title><br>
               <c-text-youtube>2021/10/18【歌枠】英語の曲も歌う枠🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-69-6" class="te">
+           <input type="checkbox" class="checkbox" id="69-6" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=3745s')">
+              <c-text-title id="al-c-69-6" class="放課後ティータイム">天使にふれたよ！</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
            </button>
         </div>
 
@@ -5388,6 +5416,14 @@
            </button>
         </div>
 
+              <div id="c-89-8" class="hu">
+           <input type="checkbox" class="checkbox" id="89-8" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=I6Njces23FE\x26t=141s')">
+              <c-text-title id="al-c-89-8" class="いきものがかり">ブルーバード</c-text-title><br>
+              <c-text-youtube>2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】</c-text-youtube>
+           </button>
+        </div>
+
               <div id="c-90-1" class="ma">
            <input type="checkbox" class="checkbox" id="90-1" onclick="Save()" >
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=D4MHsmrPH14\x26t=768s')">
@@ -5537,6 +5573,14 @@
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=J0Lqs8SkAtE\x26t=3945s')">
               <c-text-title id="al-c-93-4" class="ゴジマジP">おちゃめ機能</c-text-title><br>
               <c-text-youtube>2021/11/05【歌枠】アニソン・ボカロの超歌枠🐧🎤／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-93-5" class="o">
+           <input type="checkbox" class="checkbox" id="93-5" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=5402s')">
+              <c-text-title id="al-c-93-5" class="ゴジマジP">おちゃめ機能</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
            </button>
         </div>
 
@@ -5905,6 +5949,14 @@
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=PjrPeZo9Ms8\x26t=4264s')">
               <c-text-title id="al-c-100-7" class="水樹奈々×T.M.Revolution">革命デュアリズム</c-text-title><br>
               <c-text-youtube>2021/10/16【歌枠】アニソンいっぱい歌うぅぅぅう🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-100-8" class="ka">
+           <input type="checkbox" class="checkbox" id="100-8" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=I6Njces23FE\x26t=5291s')">
+              <c-text-title id="al-c-100-8" class="水樹奈々×T.M.Revolution">革命デュアリズム</c-text-title><br>
+              <c-text-youtube>2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】</c-text-youtube>
            </button>
         </div>
 
@@ -7428,6 +7480,14 @@
            </button>
         </div>
 
+              <div id="c-148-7" class="a">
+           <input type="checkbox" class="checkbox" id="148-7" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=4141s')">
+              <c-text-title id="al-c-148-7" class="I WiSH">明日への扉</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
               <div id="c-149-1" class="to">
            <input type="checkbox" class="checkbox" id="149-1" onclick="Save()" >
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=7PS1B2sYxo4\x26t=4318s')">
@@ -7681,6 +7741,14 @@
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=62VRsYso5QQ\x26t=5601s')">
               <c-text-title id="al-c-163-8" class="CHiCO with HoneyWorks">世界は恋に落ちている</c-text-title><br>
               <c-text-youtube>2021/11/30【歌枠】歌うぞぉぉぉぉぁぁぁぁあ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-163-9" class="se">
+           <input type="checkbox" class="checkbox" id="163-9" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=4943s')">
+              <c-text-title id="al-c-163-9" class="CHiCO with HoneyWorks">世界は恋に落ちている</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
            </button>
         </div>
 
@@ -9156,6 +9224,14 @@
            </button>
         </div>
 
+              <div id="c-213-10" class="so">
+           <input type="checkbox" class="checkbox" id="213-10" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=I6Njces23FE\x26t=1218s')">
+              <c-text-title id="al-c-213-10" class="JUDY AND MARY">そばかす</c-text-title><br>
+              <c-text-youtube>2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】</c-text-youtube>
+           </button>
+        </div>
+
               <div id="c-214-1" class="hu">
            <input type="checkbox" class="checkbox" id="214-1" onclick="Save()" >
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=GnXa34Tk0Kc\x26t=2943s')">
@@ -9209,6 +9285,14 @@
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=62VRsYso5QQ\x26t=4882s')">
               <c-text-title id="al-c-214-7" class="桜高軽音部">ふわふわ時間</c-text-title><br>
               <c-text-youtube>2021/11/30【歌枠】歌うぞぉぉぉぉぁぁぁぁあ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-214-8" class="hu">
+           <input type="checkbox" class="checkbox" id="214-8" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=I6Njces23FE\x26t=4223s')">
+              <c-text-title id="al-c-214-8" class="桜高軽音部">ふわふわ時間</c-text-title><br>
+              <c-text-youtube>2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】</c-text-youtube>
            </button>
         </div>
 
@@ -9668,6 +9752,14 @@
            </button>
         </div>
 
+              <div id="c-229-9" class="ko">
+           <input type="checkbox" class="checkbox" id="229-9" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=I6Njces23FE\x26t=5020s')">
+              <c-text-title id="al-c-229-9" class="ClariS">コネクト</c-text-title><br>
+              <c-text-youtube>2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】</c-text-youtube>
+           </button>
+        </div>
+
               <div id="c-230-1" class="ta">
            <input type="checkbox" class="checkbox" id="230-1" onclick="Save()" >
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=G7OtQNVJyX4\x26t=5643s')">
@@ -9993,6 +10085,14 @@
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=QfdF3FVilS8\x26t=16914s')">
               <c-text-title id="al-c-242-10" class="ワルキューレ">いけないボーダーライン</c-text-title><br>
               <c-text-youtube>2021/11/27【耐久歌枠】100曲耐久歌枠❗️歌いまくるぞぉぉぉぉぉお🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-242-11" class="i">
+           <input type="checkbox" class="checkbox" id="242-11" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=I6Njces23FE\x26t=3944s')">
+              <c-text-title id="al-c-242-11" class="ワルキューレ">いけないボーダーライン</c-text-title><br>
+              <c-text-youtube>2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】</c-text-youtube>
            </button>
         </div>
 
@@ -10516,6 +10616,14 @@
            </button>
         </div>
 
+              <div id="c-255-8" class="o">
+           <input type="checkbox" class="checkbox" id="255-8" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=278s')">
+              <c-text-title id="al-c-255-8" class="Ado">踊</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
               <div id="c-256-1" class="ka">
            <input type="checkbox" class="checkbox" id="256-1" onclick="Save()" >
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=_cr6yQQjQ34\x26t=11392s')">
@@ -10796,6 +10904,14 @@
            </button>
         </div>
 
+              <div id="c-267-11" class="ta">
+           <input type="checkbox" class="checkbox" id="267-11" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=I6Njces23FE\x26t=3070s')">
+              <c-text-title id="al-c-267-11" class="ナナヲアカリ">ダダダダ天使</c-text-title><br>
+              <c-text-youtube>2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】</c-text-youtube>
+           </button>
+        </div>
+
               <div id="c-268-1" class="i">
            <input type="checkbox" class="checkbox" id="268-1" onclick="Save()" >
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=Ge8rh-GKLJE\x26t=2398s')">
@@ -11009,6 +11125,14 @@
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=6Kn118iAtXQ\x26t=4385s')">
               <c-text-title id="al-c-274-8" class="fhána">虹を編めたら</c-text-title><br>
               <c-text-youtube>2021/12/02【歌枠】日付変わったら誕生日！カウントダウンするぞぉぉお🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-274-9" class="ni">
+           <input type="checkbox" class="checkbox" id="274-9" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=4439s')">
+              <c-text-title id="al-c-274-9" class="fhána">虹を編めたら</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
            </button>
         </div>
 
@@ -11300,6 +11424,14 @@
            </button>
         </div>
 
+              <div id="c-284-5" class="sa">
+           <input type="checkbox" class="checkbox" id="284-5" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=I6Njces23FE\x26t=2129s')">
+              <c-text-title id="al-c-284-5" class="大塚愛">さくらんぼ</c-text-title><br>
+              <c-text-youtube>2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】</c-text-youtube>
+           </button>
+        </div>
+
               <div id="c-285-1" class="u">
            <input type="checkbox" class="checkbox" id="285-1" onclick="Save()" >
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=d_me2gtIvdI\x26t=949s')">
@@ -11540,6 +11672,14 @@
            </button>
         </div>
 
+              <div id="c-294-7" class="sa">
+           <input type="checkbox" class="checkbox" id="294-7" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=3467s')">
+              <c-text-title id="al-c-294-7" class="宇多田ヒカル">桜流し</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
               <div id="c-295-1" class="sa">
            <input type="checkbox" class="checkbox" id="295-1" onclick="Save()" >
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=voopNmakbZU\x26t=4290s')">
@@ -11737,6 +11877,14 @@
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=nZ0Ezph9XL8\x26t=4989s')">
               <c-text-title id="al-c-304-1" class="ポルノグラフィティ">アポロ</c-text-title><br>
               <c-text-youtube>2021/10/09【歌枠】アニソン・ボカロ・Jpop歌いまくる🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-304-2" class="a">
+           <input type="checkbox" class="checkbox" id="304-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=926s')">
+              <c-text-title id="al-c-304-2" class="ポルノグラフィティ">アポロ</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
            </button>
         </div>
 
@@ -12284,6 +12432,14 @@
            </button>
         </div>
 
+              <div id="c-324-7" class="hu">
+           <input type="checkbox" class="checkbox" id="324-7" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=I6Njces23FE\x26t=1897s')">
+              <c-text-title id="al-c-324-7" class="Aimer">Brave shine</c-text-title><br>
+              <c-text-youtube>2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】</c-text-youtube>
+           </button>
+        </div>
+
               <div id="c-325-1" class="su">
            <input type="checkbox" class="checkbox" id="325-1" onclick="Save()" >
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=SSV-e2tjfRQ\x26t=4260s')">
@@ -12545,6 +12701,14 @@
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=6Kn118iAtXQ\x26t=690s')">
               <c-text-title id="al-c-333-6" class="みきとP">ロキ</c-text-title><br>
               <c-text-youtube>2021/12/02【歌枠】日付変わったら誕生日！カウントダウンするぞぉぉお🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-333-7" class="ro">
+           <input type="checkbox" class="checkbox" id="333-7" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=1585s')">
+              <c-text-title id="al-c-333-7" class="みきとP">ロキ</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
            </button>
         </div>
 
@@ -12956,6 +13120,14 @@
            </button>
         </div>
 
+              <div id="c-350-7" class="se">
+           <input type="checkbox" class="checkbox" id="350-7" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=I6Njces23FE\x26t=2806s')">
+              <c-text-title id="al-c-350-7" class="[Alexandros]">閃光</c-text-title><br>
+              <c-text-youtube>2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】</c-text-youtube>
+           </button>
+        </div>
+
               <div id="c-351-1" class="u">
            <input type="checkbox" class="checkbox" id="351-1" onclick="Save()" >
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=cxx_6GHuVdY\x26t=1344s')">
@@ -13164,6 +13336,14 @@
            </button>
         </div>
 
+              <div id="c-361-4" class="a">
+           <input type="checkbox" class="checkbox" id="361-4" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=I6Njces23FE\x26t=941s')">
+              <c-text-title id="al-c-361-4" class="fhána">青空のラプソディ</c-text-title><br>
+              <c-text-youtube>2021/12/16【コラボ歌枠】歌つよつよの最強コラボはここだ！🎤／ SINGING STREAM【火閻まどか/松永依織】</c-text-youtube>
+           </button>
+        </div>
+
               <div id="c-362-1" class="ki">
            <input type="checkbox" class="checkbox" id="362-1" onclick="Save()" >
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=7CRRMaUZKEg\x26t=1812s')">
@@ -13321,6 +13501,14 @@
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=QfdF3FVilS8\x26t=25749s')">
               <c-text-title id="al-c-369-2" class="Ado">うっせぇわ</c-text-title><br>
               <c-text-youtube>2021/11/27【耐久歌枠】100曲耐久歌枠❗️歌いまくるぞぉぉぉぉぉお🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-369-3" class="u">
+           <input type="checkbox" class="checkbox" id="369-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=3157s')">
+              <c-text-title id="al-c-369-3" class="Ado">うっせぇわ</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
            </button>
         </div>
 
@@ -13588,6 +13776,14 @@
            </button>
         </div>
 
+              <div id="c-383-3" class="ki">
+           <input type="checkbox" class="checkbox" id="383-3" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=2815s')">
+              <c-text-title id="al-c-383-3" class="Ado">ギラギラ</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
               <div id="c-384-1" class="a">
            <input type="checkbox" class="checkbox" id="384-1" onclick="Save()" >
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=g0hTNzdrzvE\x26t=1862s')">
@@ -13641,6 +13837,14 @@
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=QfdF3FVilS8\x26t=22602s')">
               <c-text-title id="al-c-385-3" class="meiyo">なにやってもうまくいかない</c-text-title><br>
               <c-text-youtube>2021/11/27【耐久歌枠】100曲耐久歌枠❗️歌いまくるぞぉぉぉぉぉお🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-385-4" class="na">
+           <input type="checkbox" class="checkbox" id="385-4" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=2585s')">
+              <c-text-title id="al-c-385-4" class="meiyo">なにやってもうまくいかない</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
            </button>
         </div>
 
@@ -13980,6 +14184,14 @@
            </button>
         </div>
 
+              <div id="c-409-2" class="si">
+           <input type="checkbox" class="checkbox" id="409-2" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=2266s')">
+              <c-text-title id="al-c-409-2" class="Ayase">シニカルナイトプラン</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
               <div id="c-410-1" class="yu">
            <input type="checkbox" class="checkbox" id="410-1" onclick="Save()" >
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8vfT712ACrM\x26t=3479s')">
@@ -14081,6 +14293,30 @@
            <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=e56d8IJm2lY\x26t=2618s')">
               <c-text-title id="al-c-422-1" class="Aimer">残響散歌</c-text-title><br>
               <c-text-youtube>2021/12/13【歌枠】アニソンめっちゃうたう🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-423-1" class="hi">
+           <input type="checkbox" class="checkbox" id="423-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=573s')">
+              <c-text-title id="al-c-423-1" class="ポルノグラフィティ">ヒトリノ夜</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-424-1" class="a">
+           <input type="checkbox" class="checkbox" id="424-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=1272s')">
+              <c-text-title id="al-c-424-1" class="GReeeeN">愛唄</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
+           </button>
+        </div>
+
+              <div id="c-425-1" class="o">
+           <input type="checkbox" class="checkbox" id="425-1" onclick="Save()" >
+           <button class="c-button" type="button" onclick="OpenWindow('https:\/\/www.youtube.com\/watch?v=8-9Zu3SztZk\x26t=1932s')">
+              <c-text-title id="al-c-425-1" class="ナナホシ管弦楽団">おねがいダーリン</c-text-title><br>
+              <c-text-youtube>2021/12/14【歌枠】今夜も歌うぞぉぉぉぉぉ🎤🐧／ SINGING STREAM【火閻まどか/めがらいと】</c-text-youtube>
            </button>
         </div>
 
@@ -14222,6 +14458,7 @@ var list = new Array(
 "13-14",
 "13-15",
 "13-16",
+"13-17",
 "14-1",
 "14-2",
 "14-3",
@@ -14579,6 +14816,7 @@ var list = new Array(
 "64-9",
 "64-10",
 "64-11",
+"64-12",
 "65-1",
 "65-2",
 "65-3",
@@ -14612,6 +14850,7 @@ var list = new Array(
 "69-3",
 "69-4",
 "69-5",
+"69-6",
 "70-1",
 "70-2",
 "71-1",
@@ -14704,6 +14943,7 @@ var list = new Array(
 "89-5",
 "89-6",
 "89-7",
+"89-8",
 "90-1",
 "90-2",
 "90-3",
@@ -14723,6 +14963,7 @@ var list = new Array(
 "93-2",
 "93-3",
 "93-4",
+"93-5",
 "94-1",
 "94-2",
 "94-3",
@@ -14769,6 +15010,7 @@ var list = new Array(
 "100-5",
 "100-6",
 "100-7",
+"100-8",
 "101-1",
 "101-2",
 "101-3",
@@ -14959,6 +15201,7 @@ var list = new Array(
 "148-4",
 "148-5",
 "148-6",
+"148-7",
 "149-1",
 "150-1",
 "150-2",
@@ -14991,6 +15234,7 @@ var list = new Array(
 "163-6",
 "163-7",
 "163-8",
+"163-9",
 "164-1",
 "164-2",
 "164-3",
@@ -15175,6 +15419,7 @@ var list = new Array(
 "213-7",
 "213-8",
 "213-9",
+"213-10",
 "214-1",
 "214-2",
 "214-3",
@@ -15182,6 +15427,7 @@ var list = new Array(
 "214-5",
 "214-6",
 "214-7",
+"214-8",
 "215-1",
 "215-2",
 "215-3",
@@ -15239,6 +15485,7 @@ var list = new Array(
 "229-6",
 "229-7",
 "229-8",
+"229-9",
 "230-1",
 "230-2",
 "231-1",
@@ -15280,6 +15527,7 @@ var list = new Array(
 "242-8",
 "242-9",
 "242-10",
+"242-11",
 "243-1",
 "243-2",
 "243-3",
@@ -15345,6 +15593,7 @@ var list = new Array(
 "255-5",
 "255-6",
 "255-7",
+"255-8",
 "256-1",
 "256-2",
 "256-3",
@@ -15380,6 +15629,7 @@ var list = new Array(
 "267-8",
 "267-9",
 "267-10",
+"267-11",
 "268-1",
 "269-1",
 "269-2",
@@ -15407,6 +15657,7 @@ var list = new Array(
 "274-6",
 "274-7",
 "274-8",
+"274-9",
 "275-1",
 "275-2",
 "275-3",
@@ -15443,6 +15694,7 @@ var list = new Array(
 "284-2",
 "284-3",
 "284-4",
+"284-5",
 "285-1",
 "286-1",
 "286-2",
@@ -15473,6 +15725,7 @@ var list = new Array(
 "294-4",
 "294-5",
 "294-6",
+"294-7",
 "295-1",
 "296-1",
 "296-2",
@@ -15498,6 +15751,7 @@ var list = new Array(
 "303-5",
 "303-6",
 "304-1",
+"304-2",
 "305-1",
 "305-2",
 "305-3",
@@ -15566,6 +15820,7 @@ var list = new Array(
 "324-4",
 "324-5",
 "324-6",
+"324-7",
 "325-1",
 "326-1",
 "326-2",
@@ -15599,6 +15854,7 @@ var list = new Array(
 "333-4",
 "333-5",
 "333-6",
+"333-7",
 "334-1",
 "334-2",
 "334-3",
@@ -15650,6 +15906,7 @@ var list = new Array(
 "350-4",
 "350-5",
 "350-6",
+"350-7",
 "351-1",
 "351-2",
 "351-3",
@@ -15676,6 +15933,7 @@ var list = new Array(
 "361-1",
 "361-2",
 "361-3",
+"361-4",
 "362-1",
 "363-1",
 "363-2",
@@ -15696,6 +15954,7 @@ var list = new Array(
 "368-2",
 "369-1",
 "369-2",
+"369-3",
 "370-1",
 "371-1",
 "371-2",
@@ -15729,6 +15988,7 @@ var list = new Array(
 "382‐4",
 "383-1",
 "383-2",
+"383-3",
 "384-1",
 "384-2",
 "384-3",
@@ -15736,6 +15996,7 @@ var list = new Array(
 "385-1",
 "385-2",
 "385-3",
+"385-4",
 "386-1",
 "386-2",
 "386-3",
@@ -15778,6 +16039,7 @@ var list = new Array(
 "407-1",
 "408-1",
 "409-1",
+"409-2",
 "410-1",
 "411-1",
 "412-1",
@@ -15791,6 +16053,9 @@ var list = new Array(
 "420-1",
 "421-1",
 "422-1",
+"423-1",
+"424-1",
+"425-1",
 );
 
 
@@ -15877,6 +16142,7 @@ var rk = new Array(
 "324-4",
 "324-5",
 "324-6",
+"324-7",
 "184-1",
 "184-2",
 "184-3",
@@ -16399,6 +16665,7 @@ var rk = new Array(
 "188-1",
 "259-1",
 "304-1",
+"304-2",
 "288-1",
 "288-2",
 "288-3",
@@ -16422,6 +16689,7 @@ var rk = new Array(
 "242-8",
 "242-9",
 "242-10",
+"242-11",
 "268-1",
 "231-1",
 "231-2",
@@ -16455,6 +16723,7 @@ var rk = new Array(
 "399-1",
 "369-1",
 "369-2",
+"369-3",
 "285-1",
 "98-1",
 "98-2",
@@ -16483,6 +16752,8 @@ var rk = new Array(
 "93-2",
 "93-3",
 "93-4",
+"93-5",
+"425-1",
 "342-1",
 "342-2",
 "342-3",
@@ -16504,6 +16775,7 @@ var rk = new Array(
 "319-1",
 "383-1",
 "383-2",
+"383-3",
 "328-1",
 "240-1",
 "211-1",
@@ -16534,6 +16806,7 @@ var rk = new Array(
 "229-6",
 "229-7",
 "229-8",
+"229-9",
 "244-1",
 "244-2",
 "244-3",
@@ -16550,7 +16823,9 @@ var rk = new Array(
 "284-2",
 "284-3",
 "284-4",
+"284-5",
 "409-1",
+"409-2",
 "199-1",
 "199-2",
 "199-3",
@@ -16582,6 +16857,7 @@ var rk = new Array(
 "213-7",
 "213-8",
 "213-9",
+"213-10",
 "368-1",
 "368-2",
 "26-1",
@@ -16604,6 +16880,7 @@ var rk = new Array(
 "267-8",
 "267-9",
 "267-10",
+"267-11",
 "45-1",
 "45-2",
 "45-3",
@@ -16670,6 +16947,7 @@ var rk = new Array(
 "385-1",
 "385-2",
 "385-3",
+"385-4",
 "74-1",
 "74-2",
 "74-3",
@@ -16750,6 +17028,7 @@ var rk = new Array(
 "36-9",
 "109-1",
 "109-2",
+"423-1",
 "249-1",
 "249-2",
 "249-3",
@@ -16805,6 +17084,7 @@ var rk = new Array(
 "89-5",
 "89-6",
 "89-7",
+"89-8",
 "151-1",
 "214-1",
 "214-2",
@@ -16813,6 +17093,7 @@ var rk = new Array(
 "214-5",
 "214-6",
 "214-7",
+"214-8",
 "176-1",
 "176-2",
 "176-3",
@@ -16906,6 +17187,7 @@ var rk = new Array(
 "64-9",
 "64-10",
 "64-11",
+"64-12",
 "344-1",
 "344-2",
 "344-3",
@@ -16938,6 +17220,7 @@ var rk = new Array(
 "333-4",
 "333-5",
 "333-6",
+"333-7",
 "132-1",
 "132-2",
 "132-3",
@@ -16983,6 +17266,7 @@ var rk = new Array(
 "77-2",
 "77-3",
 "77-4",
+"424-1",
 "307-1",
 "307-2",
 "307-3",
@@ -17086,6 +17370,7 @@ var rk = new Array(
 "100-5",
 "100-6",
 "100-7",
+"100-8",
 "117-1",
 "117-2",
 "117-3",
@@ -17222,6 +17507,7 @@ var rk = new Array(
 "294-4",
 "294-5",
 "294-6",
+"294-7",
 "54-1",
 "54-2",
 "54-3",
@@ -17290,6 +17576,7 @@ var rk = new Array(
 "163-6",
 "163-7",
 "163-8",
+"163-9",
 "3-1",
 "3-2",
 "3-3",
@@ -17309,6 +17596,7 @@ var rk = new Array(
 "361-1",
 "361-2",
 "361-3",
+"361-4",
 "153-1",
 "153-2",
 "84-1",
@@ -17331,6 +17619,7 @@ var rk = new Array(
 "350-4",
 "350-5",
 "350-6",
+"350-7",
 "289-1",
 "13-1",
 "13-2",
@@ -17348,6 +17637,7 @@ var rk = new Array(
 "13-14",
 "13-15",
 "13-16",
+"13-17",
 "347-1",
 "152-1",
 "298-1",
@@ -17368,6 +17658,7 @@ var rk = new Array(
 "69-3",
 "69-4",
 "69-5",
+"69-6",
 "352-1",
 "160-1",
 "160-2",
@@ -17387,6 +17678,7 @@ var rk = new Array(
 "274-6",
 "274-7",
 "274-8",
+"274-9",
 "372-1",
 "372-2",
 "411-1",
@@ -17438,6 +17730,7 @@ var rk = new Array(
 "148-4",
 "148-5",
 "148-6",
+"148-7",
 "332-1",
 "332-2",
 "332-3",
@@ -17476,6 +17769,7 @@ var rk = new Array(
 "255-5",
 "255-6",
 "255-7",
+"255-8",
 "203-1",
 "203-2",
 "407-1",
@@ -19257,6 +19551,35 @@ var rh = new Array(
 "228-8",
 "64-11",
 "365-6",
+"255-8",
+"423-1",
+"304-2",
+"424-1",
+"333-7",
+"425-1",
+"409-2",
+"385-4",
+"383-3",
+"369-3",
+"294-7",
+"69-6",
+"148-7",
+"274-9",
+"163-9",
+"93-5",
+"89-8",
+"361-4",
+"213-10",
+"324-7",
+"284-5",
+"350-7",
+"267-11",
+"242-11",
+"214-8",
+"229-9",
+"100-8",
+"13-17",
+"64-12",
 );
        
        
@@ -19441,6 +19764,11 @@ var rh = new Array(
          }
       }  
        
+       
+       
+      function scrolltop(){
+         window.scroll({top: 0, behavior: 'smooth'});
+      };  
        
        
        
