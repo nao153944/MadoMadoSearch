@@ -78,6 +78,26 @@ body{
 }
 
 
+.form{
+   width: 480px;
+   height: 60px;
+   text-align: center;
+   background-color: palegreen;
+}
+.select4{
+   width: 420px;
+   height: 35px;
+   text-align: center;
+   margin-top: 7px;
+}
+input[type=form]{
+  font-size: 27px;
+  transform: scale(1.0);
+}
+
+
+
+
 .select{
    width: 480px;
    height: 60px;
@@ -209,3 +229,6 @@ c-text-youtube-m{
     display: none;
 }
 
+.c-select4-none{
+    display: none;
+}
