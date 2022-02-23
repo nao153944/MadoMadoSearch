@@ -86,11 +86,11 @@ body{
 }
 .select4{
    width: 420px;
-   height: 35px;
+   height: 40px;
    text-align: center;
-   margin-top: 7px;
+   margin-top: 10px;
 }
-input[type=form]{
+input[type=search]{
   font-size: 27px;
   transform: scale(1.0);
 }
